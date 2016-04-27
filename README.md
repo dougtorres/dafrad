@@ -42,7 +42,7 @@ A nota final será computado através da média aritmética das avaliações e p
 * Projeto I e II: [A especificação do projeto](assessment/projeto.md).
 
 ## Comunicação
-Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](http://ifpb.slack.com)
+Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](https://ifpb.herokuapp.com/)
 
 ## Bibliografia
 

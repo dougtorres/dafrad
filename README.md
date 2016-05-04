@@ -54,4 +54,4 @@ Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.hero
 
 [![Ruby Aprenda a Programar](assets/books/ruby.png)](http://www.casadocodigo.com.br/products/livro-ruby) [![Ruby On Rails Coloque sua aplicação nos trilhos](assets/books/rails.png)](http://www.casadocodigo.com.br/products/livro-ruby-on-rails)  [![Rails Guide](assets/books/rails-guide.png)](http://guides.rubyonrails.org/getting_started.html)
 
-E para completar ainda mais a listagem existe estes [exemplares](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby-on-rails) de outros indicações.
+E para completar ainda mais a listagem existe estes [exemplares](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby-on-rails) como outros indicações.

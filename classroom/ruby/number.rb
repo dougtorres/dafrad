@@ -7,7 +7,7 @@ puts 1234.object_id
 puts 1234.object_id
 puts 1235.object_id
 puts 1234
-puts 1_234
+puts 2_121_234
 puts 0d170
 puts 0xAa
 puts 0252

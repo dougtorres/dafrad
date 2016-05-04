@@ -10,14 +10,21 @@ puts "lorem ipsum dolor".class
 puts "lorem ipsum dolor"
 puts "lorem\nipsum dolor"
 puts "Hello #{1 + 1}"
+puts "Hello %s %s" % [10, 10]
+puts format("Hello %s", 10)
+puts format("Hello %{valor}", valor: 10)
 puts "lorem ipsum
 dolor"
+puts "lorem".object_id
+puts "lorem".object_id
 
 # Symbol
 puts :lorem.class
-puts :lorem
+puts :lorem.object_id
+puts :lorem.object_id
 puts :"lorem ipsum dolor"
 puts :"lorem #{1 + 1}"
+puts "lorem"+:ipsum.to_s
 
 # Single character
 puts ?a
@@ -59,4 +66,4 @@ puts %i(lorem ispum dolor).inspect
 puts %r(lorem ispum dolor).inspect
 puts %s(lorem ispum dolor).inspect
 puts %w(lorem ispum dolor).inspect
-puts %x(ls)
+puts %x(ls) # `ls`

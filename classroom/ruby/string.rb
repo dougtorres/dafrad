@@ -11,7 +11,7 @@ puts "lorem ipsum dolor"
 puts "lorem\nipsum dolor"
 puts "Hello #{1 + 1}"
 puts "Hello %s %s" % [10, 10]
-puts format("Hello %s", 10)
+puts format("Hello %s", 10) # Kernel#format
 puts format("Hello %{valor}", valor: 10)
 puts "lorem ipsum
 dolor"

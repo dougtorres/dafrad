@@ -64,13 +64,16 @@ end
 end
 
 puts [1, 2, 3, 4].map{|element|element*2}.to_a.inspect # collect
+["fish", "and", "chips"].map(&:upcase)
 
 puts [1, 2, 3, 4].select{|element|element.even?}.inspect # find_all, (select!, keep_if)
 
 puts [1, 2, 3, 4].reject{|element| element.odd?}.inspect # (reject!, delete_if)
 
-puts [1, 2, 3, 4].inject{|s,v| s += v}
+puts [1, 2, 3, 4].inject{|s,v| s += v} # reduce
 puts [1, 2, 3, 4].inject(:+)
+puts [1, 2, 3, 4].inject{|s,v| s *= v}
+[1,2,3].instance_eval { reduce(:+) / size.to_f }
 
 puts [1, 2, 3, 4].include? 2
 puts [1, 2, 3, 4].include?

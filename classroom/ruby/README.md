@@ -5,10 +5,12 @@
 * Ferramentas: ruby, irb, ri, rdoc, [pry](http://pryrepl.org/), gem, [bundler](http://bundler.io/), [rake](https://github.com/ruby/rake)
 
 ### Documentação
-* Ruby Documentation [1](http://ruby-doc.org/) e [2](https://www.ruby-lang.org/en/documentation/)
+* Ruby Documentation [ruby-doc](http://ruby-doc.org/) e [ruby-lang](https://www.ruby-lang.org/en/documentation/)
+* [Sintaxe Ruby](http://ruby-doc.org/core-2.3.1/doc/syntax_rdoc.html)
 * Cheat Sheet: [learnxinyminutes](http://learnxinyminutes.com/docs/ruby/), [Ruby QuickRef](http://zenspider.com/Languages/Ruby/QuickRef.html), [Ruby Cheatsheet](http://www.cheat-sheets.org/saved-copy/RubyCheat.pdf), [Ruby Cheat Sheet](http://www.testingeducation.org/conference/wtst3_pettichord9.pdf)
 * Vídeo: [Ruby Cast Brasil](http://www.rubycastsbrasil.com.br/)
-* API: [Core](http://ruby-doc.org/core-2.1.1/),  [StdLib](http://ruby-doc.org/stdlib-2.1.1/), [Apidock](http://apidock.com/), [DevDocs](http://devdocs.io/ruby/), [OverAPI.com](http://overapi.com/ruby/)
+* API: [Core](http://ruby-doc.org/core-2.1.1/),  [StdLib](http://ruby-doc.org/stdlib-2.1.1/), [Apidock](http://apidock.com/), [DevDocs](http://devdocs.io/ruby/), [OverAPI.com](http://overapi.com/ruby/), [Built-in Classes](http://phrogz.net/programmingruby/builtins.html)
+* Object Model: [Ruby Core Diagram](http://jeromedalbert.com/a-diagram-of-the-ruby-core-object-model/), [Core Object Model](https://www.gliffy.com/go/publish/5152080)
 * Biblioteca: [Libraries](https://www.ruby-lang.org/en/libraries/), [RubyGems](http://rubygems.org/), [Ruby Web Dev](http://rwdtow.stdout.in/), [Ruby Toolbox](https://www.ruby-toolbox.com/),  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](http://awesome-ruby.com/)
 * Style: [Ruby Style](https://github.com/bbatsov/ruby-style-guide)
 * Trends: [2015](https://infinum.co/the-capsized-eight/articles/analyzing-rubygems-stats-v2015)

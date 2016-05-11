@@ -20,6 +20,11 @@ puts 12.34
 puts 1234e-2
 puts 1.234E1
 puts 0.2-0.3 # IEEE 754
+# http://blog.plataformatec.com.br/2014/09/floating-point-and-currency/
+# http://ruby-doc.org/stdlib-2.3.0/libdoc/bigdecimal/rdoc/BigDecimal.html
+require 'bigdecimal'
+require 'bigdecimal/util'
+(0.3.to_d - 0.2.to_d).to_f
 
 # Bignum
 puts (2**62).class

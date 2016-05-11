@@ -17,6 +17,8 @@ puts "lorem ipsum
 dolor"
 puts "lorem".object_id
 puts "lorem".object_id
+puts "lorem"+" ipsum"
+puts "lorem"<<" ipsum"
 
 # Symbol
 puts :lorem.class
@@ -60,6 +62,13 @@ dolor
 # Percent Strings
 puts %(lorem ipsum dolor)
 puts %q(1 + 1 is 2)
+puts %q[1 + 1 is 2]
+puts %q{1 + 1 is 2}
+puts %q|1 + 1 is 2|
+puts %q!1 + 1 is 2!
+puts %q?1 + 1 is 2?
+puts %q\1 + 1 is 2\
+puts %Q(1 + 1 is 2)
 puts %Q(1 + 1 is #{1 + 1})
 puts %Q(1 + 1 is #{1 + 1}).inspect
 puts %i(lorem ispum dolor).inspect

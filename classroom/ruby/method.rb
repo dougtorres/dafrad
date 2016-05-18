@@ -116,6 +116,3 @@ def method_block_example(&block)
   block.call 'hello world'
 end
 method_block_example {|string| puts string}
-
-# Exception Handling
-raise

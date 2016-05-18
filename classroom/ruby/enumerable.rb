@@ -40,6 +40,7 @@ puts %w[first second third fourth fifth sixth].join(', ')
 puts %w[first second third fourth fifth sixth] * ', '
 puts "first, second, third, fourth, fifth, sixth".split(', ').inspect
 
+puts [1, 1, 2, 3, 4].count(1)
 puts [1, 2, 3, 4].permutation.inspect
 puts [1, 2, 3, 4].rotate.inspect
 puts [1, 2, 3, 4].sample.inspect
@@ -82,6 +83,9 @@ puts [1, 2, 3, 4].inject(0, :+)
 puts [1, 2, 3, 4].inject{|s,v| s *= v}
 puts [1, 2, 3, 4].inject(1){|s,v| s * v}
 [1,2,3].instance_eval { reduce(:+) / size.to_f }
+
+puts [1, 1, 2, 3, 3, 4, 3].group_by{|e| e}.inspect
+puts [1, 1, 2, 3, 3, 4, 3].chunk{|e| e}.map{|e| e}.inspect
 
 puts [1, 2, 3, 4].include? 2
 puts [1, 2, 3, 4].include?

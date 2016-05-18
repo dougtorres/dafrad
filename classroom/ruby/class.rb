@@ -3,3 +3,7 @@
 # class
 
 # module
+
+# instance_variables
+
+# class_variables

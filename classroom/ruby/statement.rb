@@ -19,12 +19,6 @@ end
 
 puts "foi" unless false
 puts "foi" if not false
-a = 0
-a += 1 while a < 10
-p a # prints 10
-a = 0
-a += 1 until a > 10
-p a # prints 11
 
 variable = "123456"
 case variable
@@ -37,6 +31,14 @@ when /^1/, "2"
 else
   puts "I don't know what the string starts with"
 end
+
+a = 0
+a += 1 while a < 10
+p a # prints 10
+
+a = 0
+a += 1 until a > 10
+p a # prints 11
 
 a = 0
 until a > 10 do

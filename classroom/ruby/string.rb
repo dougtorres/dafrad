@@ -20,6 +20,9 @@ puts "lorem".object_id
 puts "lorem"+" ipsum"
 puts "lorem"<<" ipsum"
 
+puts "lorem ipsum".upcase
+puts "lorem ipsum".downcase
+
 # Symbol
 puts :lorem.class
 puts :lorem.object_id

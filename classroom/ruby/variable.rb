@@ -2,6 +2,7 @@
 
 # local_variables
 variable = 10
+snake_case = true
 number_variable = 10
 
 # global_variables
@@ -9,6 +10,3 @@ $global_variable = 10
 
 # constants
 CONSTANT = 10
-
-# instance_variables
-# class_variables

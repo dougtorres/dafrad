@@ -9,6 +9,7 @@ puts [].inspect
 puts Array.new.inspect
 puts Array.new(4, 0).inspect
 puts [1, 2, 3, 4].inspect
+puts [1, 'hello', false].inspect
 puts [1, 2, 3, 4].size
 
 puts ([ 1, 1, 3, 5 ] + [ 1, 2, 3 ]).inspect
@@ -50,6 +51,10 @@ puts [1, 2, 3, 4].max
 [1, 2, 3, 4].each do |element|
   puts  'x' * element
 end
+#=> x
+#=> xx
+#=> xxx
+#=> xxxx
 
 %w[first second third fourth fifth sixth].each do |element|
   puts element
@@ -71,8 +76,11 @@ puts [1, 2, 3, 4].select{|element|element.even?}.inspect # find_all, (select!, k
 puts [1, 2, 3, 4].reject{|element| element.odd?}.inspect # (reject!, delete_if)
 
 puts [1, 2, 3, 4].inject{|s,v| s += v} # reduce
+puts [1, 2, 3, 4].inject(0){|s,v| s + v}
 puts [1, 2, 3, 4].inject(:+)
+puts [1, 2, 3, 4].inject(0, :+)
 puts [1, 2, 3, 4].inject{|s,v| s *= v}
+puts [1, 2, 3, 4].inject(1){|s,v| s * v}
 [1,2,3].instance_eval { reduce(:+) / size.to_f }
 
 puts [1, 2, 3, 4].include? 2

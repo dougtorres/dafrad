@@ -1,0 +1,13 @@
+id;skill;kind
+1;php;back-end
+2;php;back-end
+1;angular.js;front-end
+2;angular.js;front-end
+2;react.js;front-end
+1;ruby;back-end
+2;python;back-end
+1;postgres;database
+2;sqlite;database
+1;mysql;database
+2;mysql;database
+3;mysql;database

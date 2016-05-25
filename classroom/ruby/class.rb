@@ -84,7 +84,7 @@ class Student
   end
 
   def call_private_bad
-    self.private_test # NoMethodError
+    self.private_test #=> NoMethodError
   end
 
   # private
@@ -245,7 +245,5 @@ puts fulano.instance_of?(Undergraduate)
 puts fulano.instance_of?(Student)
 
 # module
-
-# open class
 
 # namespace

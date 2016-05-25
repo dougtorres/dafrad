@@ -15,10 +15,15 @@ puts format("Hello %s", 10) # Kernel#format
 puts format("Hello %{valor}", valor: 10)
 puts "lorem ipsum
 dolor"
-puts "lorem".object_id
-puts "lorem".object_id
+puts "lorem".object_id.to_s(32)
+puts "lorem".object_id.to_s(32)
 puts "lorem"+" ipsum"
-puts "lorem"<<" ipsum"
+string = "lorem"
+puts string
+puts string.object_id.to_s(32)
+string << " ipsum"
+puts string
+puts string.object_id.to_s(32)
 
 puts "lorem ipsum".upcase
 puts "lorem ipsum".downcase

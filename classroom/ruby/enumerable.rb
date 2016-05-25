@@ -1,4 +1,5 @@
 # Enumerable - http://ruby-doc.org/core-2.3.1/Enumerable.html
+# ObjectSpace.count_objects
 ObjectSpace.each_object(::Class).select {|klass|
   # Enumerator, Dir, File, ARGF.class, IO, Range, Struct, Hash, Array
   klass.included_modules.include? Enumerable
@@ -49,32 +50,38 @@ puts [1, 2, 3, 4].sort.inspect
 puts [1, 2, 3, 4].min
 puts [1, 2, 3, 4].max
 
-[1, 2, 3, 4].each do |element|
-  puts  'x' * element
+array = [1, 2, 3, 4]
+array.each do |element|
+  puts 'x' * element
+end
+for element in array
+  puts 'x' * element
 end
 #=> x
 #=> xx
 #=> xxx
 #=> xxxx
 
-%w[first second third fourth fifth sixth].each do |element|
-  puts element
+array = %w[first second third fourth fifth sixth]
+array.each do |e|
+  puts e
 end
 
-[1, 2, 3, 4].reverse_each do |element|
-  puts 'x' * element
+[1, 2, 3, 4].reverse_each do |e|
+  puts 'x' * e
 end
 
-[1, 2, 3, 4].each_with_index do |element, index|
-  puts "#{index} -> #{'x' * element}"
+[1, 2, 3, 4].each_with_index do |value, index|
+  puts "#{index} -> #{'x' * value}"
 end
 
-puts [1, 2, 3, 4].map{|element|element*2}.to_a.inspect # collect
-["fish", "and", "chips"].map(&:upcase)
+puts [1, 2, 3, 4].map{|e|e*2}.inspect # collect
+puts ["fish", "and", "chips"].map{|e| e.upcase}.inspect
+puts ["fish", "and", "chips"].map(&:upcase).inspect
 
-puts [1, 2, 3, 4].select{|element|element.even?}.inspect # find_all, (select!, keep_if)
+puts [1, 2, 3, 4].select{|e|e.even?}.inspect # find_all, (select!, keep_if)
 
-puts [1, 2, 3, 4].reject{|element| element.odd?}.inspect # (reject!, delete_if)
+puts [1, 2, 3, 4].reject{|e| e.odd?}.inspect # (reject!, delete_if)
 
 puts [1, 2, 3, 4].inject{|s,v| s += v} # reduce
 puts [1, 2, 3, 4].inject(0){|s,v| s + v}
@@ -138,11 +145,15 @@ puts hash.keys.inspect
   puts "#{key} -> #{value}"
 end
 
-{"a" => 1, "b" => 2}.each_value do |value|
-  puts value
+for key, value in {"a" => 1, "b" => 2}
+  puts "#{key} -> #{value}"
 end
 
-{"a" => 1, "b" => 2}.select do |key, value|
+{"a" => 1, "b" => 2}.each_value do |e|
+  puts e
+end
+
+{a: 1, b: 2, c: 3}.select do |key, value|
   value.odd?
 end
 
@@ -162,7 +173,7 @@ puts (1..10).first
 puts (1..10).end
 puts (1..10).last
 
-(1..10).each do |element|
+(1..10).each do |e|
   # puts "#{element.to_s.rjust(2, '0')} - #{'x' * element}"
   puts "#{"%02d" % element.to_s} - #{'x' * element}" # Kernel::sprintf
 end

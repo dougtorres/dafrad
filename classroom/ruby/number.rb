@@ -24,12 +24,28 @@ puts 0.2-0.3 # IEEE 754
 # http://ruby-doc.org/stdlib-2.3.0/libdoc/bigdecimal/rdoc/BigDecimal.html
 require 'bigdecimal'
 require 'bigdecimal/util'
-(0.3.to_d - 0.2.to_d).to_f
+puts (BigDecimal("0.3") - 0.2).to_f
+puts (0.3.to_d - 0.2.to_d).to_f
+# http://mitrev.net/ruby/2015/08/28/benchmarking-ruby/
+require "benchmark"
+puts Benchmark.measure { BigDecimal("0.3") - 0.2 }
+puts Benchmark.realtime { BigDecimal("0.3") - 0.2 }
+Benchmark.bm do |x|
+  x.report("bigdecimal") { BigDecimal("0.3") - 0.2 }
+  x.report("float") { 0.3 - 0.2 }
+end
+require "benchmark/ips"
+Benchmark.ips do |x|
+  x.report("bigdecimal1") { BigDecimal("0.3") - 0.2 }
+  x.report("bigdecimal2") { BigDecimal("0.3") - 0.2 }
+  x.report("float") { 0.3 - 0.2 }
+  x.compare!
+end
 
 # Bignum
 puts (2**62).class
-puts (2**62).object_id
-puts (2**62).object_id
+puts (2**62).object_id.to_s(32)
+puts (2**62).object_id.to_s(32)
 
 # Rational
 puts (1/2).class

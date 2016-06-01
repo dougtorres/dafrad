@@ -1,0 +1,44 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+package App{
+
+    Person *-- Role: roles
+    Person -- SkillUtil
+
+    class SkillUtil {
+      people: Array[Person]
+      load(): nil
+      list_skills(person: Person, role: Role): String
+      list_people(role: Role, skill: Skill): String
+    }
+
+    class Person{
+      -id: Integer
+      -name: String
+      -email: String
+      +id(): Integer
+      +id=(): Integer
+      +name(): String
+      +name=(): String
+      +email(): String
+      +email=(): String
+      +roles(): Hash[Role]
+      +roles=(roles): Hash[Role]
+    }
+
+    class Role{
+      -id: Integer
+      -name: String
+      -skills: Array[String]
+      +id(): Integer
+      +id=(): Integer
+      +name(): String
+      +name=(): String
+      +skills(): Array[String]
+      +skills=(skills): Array[String]
+    }
+}
+@enduml

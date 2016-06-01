@@ -1,0 +1,21 @@
+puts "Qual perfil vc deseja?"
+kind = gets.chop
+puts kind
+
+a) profile(kind, skill) by name
+fulano
+  back-end: php, python
+  front-end: angular.js
+
+b) name by kind
+back-end
+  fuluno, sicrano
+
+c) name by skill
+php
+  fulano, sicrano
+
+d) skill by name, kind
+fulano
+back-end
+  php, python

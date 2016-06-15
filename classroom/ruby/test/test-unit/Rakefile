@@ -1,0 +1,6 @@
+task default: "test"
+
+desc "Test unit"
+task :test do
+  ruby "test/*.rb"
+end

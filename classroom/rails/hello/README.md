@@ -1,24 +1,12 @@
-# README
+# Projeto Hello
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Roteiro inicial de criação do projeto Hello:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails new hello
+$ cd hello
+$ rails generate scaffold post title:string body:text published:boolean
+$ rails db:migrate
+$ rails server
+$ open http://localhost:3000/posts/
+```

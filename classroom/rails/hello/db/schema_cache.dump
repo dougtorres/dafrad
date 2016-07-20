@@ -1,0 +1,65 @@
+U:2ActiveRecord::ConnectionAdapters::SchemaCache[
+l+-Ñ%V{
+I"schema_migrations:ET[o:-ActiveRecord::ConnectionAdapters::Column:
+@nameI"version;T:@table_nameI"schema_migrations;T:@sql_type_metadatao:6ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+:@sql_typeI"varchar;T:
+@type:string:@limit0:@precision0:@scale0:
+@nullF:@default0:@default_function0:@collation0:@comment0I"ar_internal_metadata;T[	o;;I"key;T;	I"ar_internal_metadata;T;
+o;
+;I"varchar;T;;;0;0;0;F;0;0;0;0o;;I"
+value;T;	@;
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0o;;I"created_at;T;	@;
+o;
+;I"datetime;T;:datetime;0;0;0;F;0;0;0;0o;;I"updated_at;T;	@;
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0I"
+posts;T[o;;I"id;T;	I"
+posts;T;
+o;
+;I"INTEGER;T;:integer;0;0;0;F;0;0;0;0o;;I"
+title;T;	@';
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0o;;I"	body;T;	@';
+o;
+;I"	text;T;:	text;0;0;0;T;0;0;0;0o;;I"published;T;	@';
+o;
+;I"boolean;T;:boolean;0;0;0;T;0;0;0;0o;;I"created_at;T;	@';
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0o;;I"updated_at;T;	@';
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0o;;I"category;T;	@';
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0I"
+users;T[
+o;;I"id;T;	I"
+users;T;
+o;
+;I"INTEGER;T;;;0;0;0;F;0;0;0;0o;;I"	name;T;	@F;
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0o;;I"
+email;T;	@F;
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0o;;I"created_at;T;	@F;
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0o;;I"updated_at;T;	@F;
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0I"places;T[	o;;I"id;T;	I"places;T;
+o;
+;I"INTEGER;T;;;0;0;0;F;0;0;0;0o;;I"	name;T;	@];
+o;
+;I"varchar;T;;;0;0;0;T;0;0;0;0o;;I"created_at;T;	@];
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0o;;I"updated_at;T;	@];
+o;
+;I"datetime;T;;;0;0;0;F;0;0;0;0{
+I"schema_migrations;T{@@I"ar_internal_metadata;T{	@@@@@@@ @I"
+posts;T{@&@%@+@*@/@.@3@2@7@6@;@:@?@>I"
+users;T{
+@E@D@J@I@N@M@R@Q@V@UI"places;T{	@\@[@a@`@e@d@i@h{
+I"schema_migrations;TI"version;TI"ar_internal_metadata;TI"key;TI"
+posts;TI"id;TI"
+users;TI"id;TI"places;TI"id;T{
+I"schema_migrations;TTI"ar_internal_metadata;TTI"
+posts;TTI"
+users;TTI"places;TT

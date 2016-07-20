@@ -10,6 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160706195627) do
+=======
 ActiveRecord::Schema.define(version: 20160713201347) do
 
   create_table "places", force: :cascade do |t|
@@ -17,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160713201347) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+>>>>>>> 3a9c07d1fb256f7b709da5df5410eb29c1c33ae3
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"

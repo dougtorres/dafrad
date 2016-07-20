@@ -1,4 +1,5 @@
 require_relative "../src/string_calculator"
+# require "string_calculator"
 
 describe StringCalculator do
 

@@ -1,0 +1,32 @@
+# dot -Tpng class.dot -o class.png
+digraph Couriers {
+  fontname = "Bitstream Vera Sans"
+  fontsize = 8
+
+  node [
+  fontname = "Bitstream Vera Sans"
+  fontsize = 8
+  shape = "record"
+  ]
+
+  edge [
+  arrowtail = "empty"
+  ]
+
+  Studend [
+    label = "{
+      Studend
+      |
+      + id : integer \
+      \l+ name : string \
+      \l+ course : string \
+      \l+ INSTITUITION : string \
+      \l+ email : string\l
+      |
+      + calculateShipping() : float \
+      \l+ ship(): boolean \
+      \l+ ship(): boolean\l
+    }"
+  ]
+
+}

@@ -75,6 +75,8 @@ end
   puts "#{index} -> #{'x' * value}"
 end
 
+puts([1, 2, 3, 4].map do|e|; e*2; end.inspect) # collect
+puts([1, 2, 3, 4].map do|e| e*2 end.inspect) # collect
 puts [1, 2, 3, 4].map{|e|e*2}.inspect # collect
 puts ["fish", "and", "chips"].map{|e| e.upcase}.inspect
 puts ["fish", "and", "chips"].map(&:upcase).inspect

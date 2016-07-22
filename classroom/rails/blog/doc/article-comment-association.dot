@@ -1,0 +1,25 @@
+# http://www.graphviz.org/doc/info/shapes.html
+digraph structs {
+  node [shape=plaintext];
+  articles [
+    label=<
+      <table cellspacing="0">
+        <tr><td colspan="3"><b>articles</b></td></tr>
+        <tr><td><b>id</b></td><td><b>title</b></td><td><b>text</b></td></tr>
+        <tr><td port="a1">1</td><td>Quem é esse pokemon?</td><td>Ele é pequeno...</td></tr>
+      </table>
+    >
+  ];
+  comments [
+    label=<
+      <table cellspacing="0">
+        <tr><td colspan="4"><b>comments</b></td></tr>
+        <tr><td><b>id</b></td><td><b>commenter</b></td><td><b>comment</b></td><td><b>article_id</b></td></tr>
+        <tr><td>1</td><td>Pikachu</td><td>Sou eu!</td><td port="c1">1</td></tr>
+        <tr><td>2</td><td>Bulbasaur</td><td>Não, sou eu!</td><td port="c2">1</td></tr>
+      </table>
+    >
+  ];
+  comments:c1 -> articles:a1;
+  comments:c2 -> articles:a1;
+}

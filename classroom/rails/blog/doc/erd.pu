@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Article {
+  id: int
+  title: string
+  text: text
+}
+
+class Comment {
+  id: int
+  commenter: string
+  comment: text
+  article: references
+}
+
+class Tag {
+  id: int
+  name: string
+}
+
+class Metadatum {
+  id: int
+  language: string
+  custom_url: string
+  license: string
+  article: references
+}
+
+Article "1" -- "N" Comment
+Article "N" -- "N" Tag
+Article "1" -- "1" Metadatum
+
+@enduml

@@ -1,20 +1,25 @@
 class ArticlesController < ApplicationController
   before_action :set_articles, only: [:show, :edit, :update, :destroy]
 
+  # GET /articles
   def index
     @articles = Article.last_published.all
   end
 
+  # GET /articles/:id
   def show
   end
 
+  # GET /articles/new
   def new
     @article = Article.new
   end
 
+  # GET /articles/:id/edit
   def edit
   end
 
+  # POST /articles
   def create
     @article = Article.new(set_params)
     if @article.save
@@ -24,6 +29,7 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # PATCH/PUT /articles/:id
   def update
     if @article.update(set_params)
       redirect_to article_path(@article)
@@ -32,6 +38,7 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # DELETE /artiles/:id
   def destroy
     @article.destroy
     redirect_to articles_path

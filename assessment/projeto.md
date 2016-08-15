@@ -30,11 +30,12 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 > Membros:
 * Nome - matricula
 
-**Equipe #3**: Vendas
-> [Proposta]() e [Código Fonte]()
+**Equipe #3**: VendaFacil
+> [Proposta](https://www.dropbox.com/s/c88zhic324yq37q/Proposta-ferramenta-rad.docx?dl=0) e [Código Fonte](https://github.com/anderson-arg/VendaFacil)
 
 > Membros:
-* Nome - matricula
+* Anderson Araújo - 20132370403
+* Fellipe Freire - 20131370124
 
 **Equipe #4**: RoROS
 > [Proposta]() e [Código Fonte](https://github.com/rafaelcruzpb/RoROS.git)

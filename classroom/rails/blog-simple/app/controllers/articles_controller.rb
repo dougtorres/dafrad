@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_articles, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize, except: [:index, :show]
 
   #GET /feed
   def feed

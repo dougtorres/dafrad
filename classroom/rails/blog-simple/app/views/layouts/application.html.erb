@@ -30,9 +30,21 @@
             <li class="<%= 'active' if current_page?(root_path) or current_page?(articles_path) %>">
               <%= link_to 'Blog', articles_path %>
             </li>
-            <li class="<%= 'active' if current_page?(new_article_path) %>">
-              <%= link_to 'Create Article', new_article_path %>
-            </li>
+            <% if current_user %>
+              <li class="<%= 'active' if current_page?(new_article_path) %>">
+                <%= link_to 'Create Article', new_article_path %>
+              </li>
+              <li>
+                <%= link_to 'Logout', logout_path %>
+              </li>
+            <% else %>
+              <li class="<%= 'active' if current_page?(signup_path) %>">
+                <%= link_to 'Sign up', signup_path %>
+              </li>
+              <li class="<%= 'active' if current_page?(login_path) %>">
+                <%= link_to 'Login', login_path %>
+              </li>
+            <% end %>
           </ul>
         </div>
        </div>
@@ -41,6 +53,9 @@
       <% unless flash[:notice].nil? %>
         <!-- <div class="alert alert-success"><%= flash[:notice] %></div> -->
         <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <% unless flash[:error].nil? %>
+        <div class="alert alert-danger"><%= error %></div>
       <% end %>
       <%= yield %>
     </div>

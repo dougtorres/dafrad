@@ -19,17 +19,17 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+pt-BR:
   hello: "Hello world"
   activerecord:
     models:
-      user: "user"
+      user: "usuário"
     attributes:
       user:
-        name: 'name'
+        name: 'nome'
         email: 'email'
-        password: 'password'
-        password_confirmation: 'password confirmation'
+        password: 'senha'
+        password_confirmation: 'confirmação de senha'
   users:
     new:
-      submit: 'Sign up'
+      submit: 'Cadastrar'

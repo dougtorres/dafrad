@@ -26,10 +26,30 @@ pt-BR:
       user: "usuário"
     attributes:
       user:
-        name: 'nome'
-        email: 'email'
-        password: 'senha'
-        password_confirmation: 'confirmação de senha'
+        name: 'Nome'
+        email: 'Email'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de senha'
   users:
     new:
       submit: 'Cadastrar'
+      error:
+        one: "%{count} erro impediu a criação desse usuário:"
+        other: "%{count} erros impediram a criação desse usuário"
+  sessions:
+    create:
+      error: 'Nome e/ou senha inválida.'
+    new:
+      submit: 'Entrar'
+  layouts:
+    application:
+      blog: 'Blog'
+      new_article: 'Criar Artigo'
+      logout: 'Sair'
+      signup: 'Cadastrar'
+      login: 'Entrar'
+  helpers:
+    label:
+      login:
+        email: 'Email'
+        password: 'Senha'

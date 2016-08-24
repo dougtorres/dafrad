@@ -24,12 +24,33 @@ en:
   activerecord:
     models:
       user: "user"
+
     attributes:
       user:
-        name: 'name'
-        email: 'email'
-        password: 'password'
-        password_confirmation: 'password confirmation'
+        name: 'Name'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
   users:
     new:
       submit: 'Sign up'
+      error:
+        one: "%{count} error prohibited this user from being saved:"
+        other: "%{count} errors prohibited this user from being saved:"
+  sessions:
+    create:
+      error: 'Username and/or Password Invalid.'
+    new:
+      submit: 'Login'
+  layouts:
+    application:
+      blog: 'Blog'
+      new_article: 'Create Article'
+      logout: 'Logout'
+      signup: 'Sign up'
+      login: 'Login'
+  helpers:
+    label:
+      login:
+        email: 'Email'
+        password: 'Password'

@@ -6,8 +6,7 @@
         <div class="alert alert-danger">
           <div id="error_explanation">
             <h2>
-              <%= pluralize(@user.errors.count, "error") %> prohibited
-              this user from being saved:
+              <%= t('.error', :count => @user.errors.full_messages.length) %>
             </h2>
             <ul>
               <% @user.errors.full_messages.each do |msg| %>

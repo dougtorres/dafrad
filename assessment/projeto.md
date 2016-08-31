@@ -25,10 +25,12 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Nome - matricula
 
 **Equipe #2**: AgendaProject
-> [Proposta]() e [Código Fonte]()
+> [Proposta](http://goo.gl/d4cCHr) e [Código Fonte](https://github.com/dougtorres/projeto-ruby)
 
 > Membros:
-* Nome - matricula
+Rodrigo Sávio Leiros Borges - 20121370083
+Douglas Torres - 20112370319
+
 
 **Equipe #3**: VendaFacil
 > [Proposta](https://www.dropbox.com/s/c88zhic324yq37q/Proposta-ferramenta-rad.docx?dl=0) e [Código Fonte](https://github.com/anderson-arg/VendaFacil)

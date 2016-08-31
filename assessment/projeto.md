@@ -38,7 +38,7 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Fellipe Freire - 20131370124
 
 **Equipe #4**: RoROS
-> [Proposta]() e [Código Fonte](https://github.com/rafaelcruzpb/RoROS.git)
+> [Proposta](https://github.com/rafaelcruzpb/RoROS/blob/master/README.md) e [Código Fonte](https://github.com/rafaelcruzpb/RoROS.git)
 
 > Membros:
 * Rafael da Cruz Mendes - 20122370486
